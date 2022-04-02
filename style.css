@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Reset CSS */
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:active,
+textarea:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+ul,
+ol,
+li{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    color:#2b292d;
+    letter-spacing: -0.01em;
+}
+
+.fill-button{
+    transition: opacity 300ms ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 140px;
+    height: 48px;
+    background-color: #3040C4;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1,6;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    border: none;
+}
+
+.fill-button.inverted{
+    color: #3040C4;
+    background-color: #fff;
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.section-category{
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.section-tittle{
+    margin-bottom: 24px;
+    font-size: 34px;
+    line-height: 1.0588235294;
+    letter-spacing: -0.03em;
+    color:#2b292d;
+}
+
+/* landing */
+.landing{
+    background-color: pink;
+    text-align: center;
+}
+
+.landing-tittle{
+    color: #2B292D;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+}
+
+.landing-desc{
+    margin-bottom: 20px;
+}
+
+.landing .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child {
+    margin-right: 8px;
+}
+
+.landing-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fill-button:hover{
+    opacity: 0.5;
+}
+
+/* Service */
+
+.service{
+    background-color: #F4F5F7;
+    padding: 80px 0;
+}
+
+.service-tittle{
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.3636363636;
+    letter-spacing: -0.04em;
+    color: #2b292d;
+}
+
+.service .col-12:first-child{
+    margin-bottom: 16px;
+}
+/* Program */
+
+.program .row:first-child{
+    margin-bottom: 32px;
+}
+
+.program .section-category{
+    color: #009B4D;
+}
+
+.program .col-md-4{
+    margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
+    margin-bottom: 0px;
+}
+
+.program-card{
+    text-align: center;
+    display: block;
+    padding: 24px 0 32px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: background-color 300ms ease-in-out,
+                box-shadow 300ms ease-in-out;
+}
+
+.program-card:hover{
+    background-color: #3141c5;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.program-card:hover strong{
+    color: #fff;
+}
+
+
+.program-card img{
+    margin: 0 auto 16px;
+    display: block;
+    width: auto;
+    height: 195px;
+}
+.program-card strong{
+    font-size: 18px;
+    line-height: 1.3333333333;
+    letter-spacing: -0.02em;
+    transition: color 500ms ease-in-out;
+}
+/* curriculum */
+.curriculum .row:first-child{
+    margin-bottom: 48px;
+}
+
+.curriculum .section-category{
+    color: #0189d1;
+}
+
+.curriculum .section-desc{
+    margin-bottom: 32px;
+}
+
+.curriculum-image{
+    display: none;
+}
+
+.curriculum .row:last-child .col-12:first-child{
+    margin-bottom: 40px;
+}
+
+.curriculum-detail-desc{
+    font-size: 15px;
+    line-height: 1.4666666667;
+    letter-spacing: -0.01em;
+    color: #2b292d;
+}
+
+/* subscription */
+.subscription{
+    background-color: #F2F8FA;
+    text-align:center;
+    padding: 40px 0;
+}
+
+.subscription-image{
+    padding: 25px 0;
+}
+
+.subscription-image img{
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 190px;
+}
+
+.subscription .input-group {
+    margin-bottom: 2px;
+}
+
+.subscription .input-group input{
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+.subscription .input-group .fill-button{
+    width: 100%;
+}
+
+.subscription-tittle{
+    margin-bottom: 16px;
+    color: #2B292D;
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.subscription-desc{
+    margin-bottom: 24px;
+}
+
+.subscription-form .form-notice{
+    font-size: 13px;
+    line-height: 1.538461538461538;
+    color: #7B7B7E;
+}
+
+.subscription-form .form-notice a{
+    color: #3040C4;
+    text-decoration: underline;
+}
+
+/* footer */
+.footer{
+    padding: 24px 0;
+}
+.footer-link{
+    margin-bottom: 8px;
+}
+
+.footer-link a{
+    color: #807F81;
+    font-size: 14px;
+    line-height: 1.714285714285714;
+    letter-spacing: -0.01em;
+}
+
+.footer-link:last-child{
+    margin-bottom: 0;
+}
+
+.footer-links{
+    padding: 0;
+}
+
+
+/* > 768px(desktop) */
+
+@media screen and (min-width : 768px){
+    p {
+        font-size: 22px;
+        line-height: 1.3636363636;
+    }
+
+    .fill-button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.5555555556;
+    }
+
+    .section{
+        padding-bottom: 96px;
+    }
+    
+    .section-category{
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 1.0909090909;
+    }
+    .section-tittle{
+        margin-bottom: 32px;
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    /* landing */
+
+    .landing-tittle{
+        margin-bottom: 32px;
+        font-size: 70px;
+        line-height: 1.0285714286;
+    }
+
+    .landing-desc{
+        margin-bottom: 32px;
+    }
+
+    .landing-tittle{
+        font-size: 70px;
+        line-height: 1.0285714286;
+    }
+
+    .landing .button-group .fill-button:first-child {
+        margin-right: 16px;
+    }
+        
+    .landing-content{
+        height: auto;
+        padding: 120px 0;
+    }
+
+    /* Service */
+
+    .service-tittle{
+        font-size: 26px;
+        line-height: 1.307692307692308;
+    }
+
+    .service .col-12:first-child{
+        margin-bottom: 0;
+    }
+    
+    /* Program */
+    .program{
+        text-align:center;
+    }
+    
+    .program .row:first-child{
+        margin-bottom: 72px;
+    }
+
+    .program-card strong{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .program-card img{
+        margin-bottom: 24px;
+    }
+    /* curriculum */
+    .curriculum .row:last-child .col-12:first-child{
+        margin-bottom: 0px;
+    }
+
+    .curriculum .row:first-child{
+        margin-bottom: 24px;
+    }
+
+    .curriculum .section-desc{
+        margin-bottom: 72px;
+    }
+
+    .curriculum-image{
+        display:block;
+    }
+
+    .curriculum-image img{
+        display: block;
+        width: 100%;
+        max-width: 425px;
+        height: auto;
+    }
+
+    .curriculum-detail-desc{
+        font-size: 18px;
+        line-height: 1.4444444444;
+    }
+    /* Subscription */
+    .subscription-image{
+        padding: 8px 0;
+    }
+    .subscription-image img{
+        height: 285px;
+        margin-left: 0;
+    }
+
+    .subscription{
+        padding: 80px 0;
+        text-align:left;
+    }
+
+    .subscription-tittle{
+        font-size: 40px;
+    }
+
+    .subscription .input-group{
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .subscription-form .input-group .fill-button{
+        flex-shrink: 0;
+        width: 160px;
+    }
+
+    .subscription .input-group input{
+        flex-shrink: 0;
+        margin-bottom: 0;
+        margin-right: 8px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.333333333;
+    }
+    
+    /* footer */
+    .footer{
+        margin: 16px 0;
+    }
+
+    .footer-links{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-link {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .footer-link:last-child{
+        margin-right: 0;
+    }
+
+}
+
+/* Custom Grid - Fix container width */
+
+@media screen and (min-width:1200px) {
+        .container{
+            max-width: 960px !important;
+        }
+}
